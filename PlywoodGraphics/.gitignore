@@ -1,0 +1,43 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# NuGet
+*.nupkg
+packages/
+
+# MAUI
+*.ipa
+*.apk
+*.app
+*.app.dSYM
+
+# Visual Studio / VS Code
+.vscode/
+*.sln.DotSettings
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Shader compilation output
+*.metallib
+*.spv
+*.gles
+
+# Generated asset zips
+assets/compiled/
+*.zip
+
+# Test results
+TestResults/
