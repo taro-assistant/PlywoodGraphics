@@ -1,0 +1,16 @@
+【Brave ウォレット】
+ブラウザ: Brave
+パスワード: B7#kM9pQ!vR2wX4$L8nJ
+
+🔐 リカバリーフレーズ（絶対に秘密）:
+peace cereal vehicle rookie suffer sign enhance trend census nuclear destroy base
+
+📍 アドレス:
+├─ Ethereum + EVM: 0x7Ad6b30E97C7de51982BDE9C9F38353752D8C67C
+├─ Filecoin: f1px3zc7izeu2syi5rvovjpbmtogmsq57u2xyxjva
+└─ Solana + SVM: 8sPBXSMFWkaTpaRsejjDoNuATNTHiWk2Bxfhdy6S2pUm
+
+⚠️ リカバリーフレーズは紙に書いて保管済み
+⚠️ デジタル保存は推奨されない（セキュリティリスク）
+
+作成: 2026-03-27 ✅

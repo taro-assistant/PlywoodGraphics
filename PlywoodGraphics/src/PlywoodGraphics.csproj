@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>PlywoodGraphics</Title>
+    <Description>Cross-platform graphics library for .NET MAUI - Metal and OpenGL ES abstraction</Description>
+    <Authors>taro-assistant</Authors>
+    <PackageProjectUrl>https://github.com/taro-assistant/PlywoodGraphics</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/taro-assistant/PlywoodGraphics</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
+    <Compile Include="Platforms/Metal/**/*.cs" />
+    <Compile Remove="Platforms/OpenGLES/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+    <Compile Include="Platforms/OpenGLES/**/*.cs" />
+    <Compile Remove="Platforms/Metal/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assets/**/*" />
+    <EmbeddedResource Include="assets/compiled/**/*.zip" />
+  </ItemGroup>
+
+</Project>
